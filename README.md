@@ -115,3 +115,31 @@ These skills help you write, refactor, and fix code.
   ```
   npx skills@latest add mattpocock/skills/obsidian-vault
   ```
+
+## Engineering skills v1.3.1 (October 2026)
+
+Updated from Matt Pocock's upstream [v1.3.1](https://github.com/mattpocock/skills/releases/tag/v1.3.1), pinned to source commit `24fe0ef7737efae15c87225755e9f6f5965e4888`. The original MIT license and credit remain in `LICENSE`. Earlier skills have **not** been deleted; the existing `tdd` has been refreshed to match v1.3.1.
+
+New or refreshed skill entrypoints (actual vendored `SKILL.md` files, not just setup notes):
+- `retro` — review session traces and propose environment / guardrail improvements for human approval.
+- `pr` — evidence-backed PR descriptions and merge risk.
+- `implement-spec` — dependency-aware ticket execution using isolated worktrees.
+- `code-review`, `to-spec`, `to-tickets`, `setup-matt-pocock-skills`, `writing-for-agents`, `tdd` — dependencies for the end-to-end loop.
+
+Quick install **from our repository** using the open skills installer (choose a coding-agent target as prompted):
+
+```sh
+npx skills add ctmakc/skills --skill retro
+npx skills add ctmakc/skills --skill pr
+npx skills add ctmakc/skills --skill implement-spec
+npx skills add ctmakc/skills --skill code-review
+npx skills add ctmakc/skills --skill to-spec
+npx skills add ctmakc/skills --skill to-tickets
+npx skills add ctmakc/skills --skill tdd
+npx skills add ctmakc/skills --skill writing-for-agents
+npx skills add ctmakc/skills --skill setup-matt-pocock-skills
+```
+
+**Choose one source per coding agent:** either this editable and pinned fork **or** the official auto-updating plugin. Installing both causes duplicate skill registrations. This is only a source repository: updating it does not automatically alter any running Codex/Claude instance or VPS environment.
+
+Read `UPSTREAM_LOCK.md` for the file mapping and upgrade policy.
