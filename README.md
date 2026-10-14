@@ -156,3 +156,5 @@ npx skills add ctmakc/skills --skill innova-product-studio
 ```
 
 As of 2026-10-13, the skill is additionally **vendored for pilot use** in `ctmakc/mashamassage` under both `.agents/skills/` (Codex) and `.claude/skills/` (Claude Code), with project-level `AGENTS.md`. Other client projects and global user environments are unchanged. Do not mass-install until the pilot is reviewed.
+
+**ChatGPT web-chat compatibility:** see [chat execution profile](innova-product-studio/references/chatgpt-web-chat.md). In normal ChatGPT chat, explicitly fetch the skill and chat profile through connected GitHub. Github files and Codex/Claude skill copies do **not** auto-install into ChatGPT conversations; and no Work/terminal/multiagent privileges should be assumed. The ChatGPT Skills list for the current session did not expose this custom skill. To help with future chats, the user may add a short GitHub skill pointer to Custom Instructions (example in the chat profile).
