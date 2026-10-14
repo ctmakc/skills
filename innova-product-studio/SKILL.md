@@ -3,12 +3,18 @@ name: innova-product-studio
 description: Product-first workflow for building or redesigning websites, landing pages, online stores, CRM, SaaS products and mobile apps. Use when a user asks to build a site/app/platform, improve a major screen or user journey, or avoid generic AI-generated design. Adapts to FAST fixes, STANDARD websites and DEEP products, aligning business goals, UX, distinct art direction, engineering and real QA without unnecessary agent bureaucracy.
 metadata:
   author: innova
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # INNOVA Product Studio
 
 Deliver a useful, distinctive, working product rather than a generic AI template or a polished mockup. This is a **workflow**, not a visual style or a requirement to spawn multiple agents. Prefer one capable implementer; parallelize independent research, design or engineering only when the expected benefit exceeds coordination overhead.
+
+## Execution environment comes first
+
+This skill is **designed to run inside ordinary ChatGPT web chat** as well as coding agents. When working in ChatGPT chat, **read and follow [references/chatgpt-web-chat.md](references/chatgpt-web-chat.md) before implementation**. Discover the actual connected tools before claiming a workflow can run. Use the GitHub/Files/working-container/browser/MMIX connectors available in this session rather than pretending to have SSH, a local checkout, IDE automation, independent subagents or ChatGPT Work cloud-computer abilities. A GitHub-hosted skill is not automatically loaded into ordinary ChatGPT chat; an explicit GitHub read here is necessary unless the skill is exposed by the currently installed skills.
+
+If a capability is missing, deliver a real independently useful artifact or bounded plan and **state the missing action**. Do not convert inability to commit, deploy or test into a misleading success claim. Keep planning proportional: this section is not a requirement to pause execution or to request mode switching.
 
 ## Route by scope before doing anything
 
@@ -68,7 +74,7 @@ Report concisely: what exists; main user path; what was actually tested; what is
 
 ## Autonomous decision rule
 
-Use separate agents only for genuinely independent high-risk questions (e.g. accessibility audit vs engineering implementation, or alternative concepts); merge their **artifacts and conclusions**, not their personas. Do not make art direction a blocking approval ceremony. If the evidence supports one direction, choose it and implement; ask the user only when two materially different business decisions cannot safely be resolved.
+Use separate agents only when they are actually available and beneficial for genuinely independent high-risk questions (e.g. accessibility audit vs engineering implementation, or alternative concepts); merge their **artifacts and conclusions**, not their personas. Do not make art direction a blocking approval ceremony. If the evidence supports one direction, choose it and implement; ask the user only when two materially different business decisions cannot safely be resolved.
 
 ## Quality gate and rollback rule
 
