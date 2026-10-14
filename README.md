@@ -143,3 +143,16 @@ npx skills add ctmakc/skills --skill setup-matt-pocock-skills
 **Choose one source per coding agent:** either this editable and pinned fork **or** the official auto-updating plugin. Installing both causes duplicate skill registrations. This is only a source repository: updating it does not automatically alter any running Codex/Claude instance or VPS environment.
 
 Read `UPSTREAM_LOCK.md` for the file mapping and upgrade policy.
+
+## INNOVA Product Studio (private workflow pilot)
+
+- **[innova-product-studio](innova-product-studio/SKILL.md)** — Adaptive business-led workflow for sites, e-commerce, apps and platforms. FAST for bug fixes; STANDARD for new websites and UX redesign; DEEP for products with data, permissions and backend architecture. Contains a deliberate anti-template art-direction step and rendered/e2e quality gates.
+- **[Evaluation protocol](innova-product-studio/references/evaluation.md)** — A/B benchmark and regression conditions. Pilot only until it demonstrably improves quality and does not slow trivial fixes.
+
+Install explicitly where needed; it is **not automatically activated by being committed to GitHub**:
+
+```sh
+npx skills add ctmakc/skills --skill innova-product-studio
+```
+
+As of 2026-10-13, the skill is additionally **vendored for pilot use** in `ctmakc/mashamassage` under both `.agents/skills/` (Codex) and `.claude/skills/` (Claude Code), with project-level `AGENTS.md`. Other client projects and global user environments are unchanged. Do not mass-install until the pilot is reviewed.
